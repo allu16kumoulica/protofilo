@@ -1,5 +1,15 @@
-// Example: Handle contact form submission
-document.querySelector('form').addEventListener('submit', (e) => {
-    e.preventDefault();
-    alert("Thank you for your message!");
+// Scroll animation
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+    });
 });
+
+document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+
+// Dark mode toggle
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+}
