@@ -3,55 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Kumoulica Allu - Cybersecurity Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Your Name</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Brief introduction about yourself</p>
-    </section>
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle">
+        <button onclick="toggleDarkMode()">🌙</button>
+    </div>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>List your skills with progress bars or icons</p>
-    </section>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Kumoulica</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project Title</h3>
-            <p>Project description</p>
-            <a href="link-to-project">View Project</a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="assets/profile.jpg" alt="Profile Image" class="profile-img">
+            <h1>Hi, I'm <span class="name">Kumoulica Allu</span> 👋</h1>
+            <p>Cybersecurity Graduate Student | Machine Learning | Forensics Enthusiast</p>
+            <div class="buttons">
+                <a href="#contact" class="btn">Contact Me</a>
+                <a href="resume/Kumoulica_Allu_Resume.pdf" class="btn" download>Download CV</a>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
+    <!-- About -->
+    <section id="about" class="section fade-in">
+        <h2>About Me</h2>
+        <p>I'm currently pursuing my Master of Science in Cybersecurity at the University of Houston. 
+        I specialize in areas like Intrusion Detection, Explainable AI, OSINT, Forensics, and Cyber Threat Analysis.
+        Passionate about cybersecurity, machine learning, and solving real-world security challenges.</p>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section fade-in">
+        <h2>Education</h2>
+        <div class="card">
+            <h3>University of Houston</h3>
+            <p>MS Cybersecurity — GPA: 4.00 (Expected May 2026)</p>
+        </div>
+        <div class="card">
+            <h3>Amrita Vishwa Vidyapeetham</h3>
+            <p>B.Tech Computer Science (Cybersecurity) — GPA: 7.74 (Apr 2024)</p>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section fade-in">
+        <h2>Experience</h2>
+        <div class="card">
+            <h3>Research Intern - IIT Tirupati</h3>
+            <ul>
+                <li>Applied deep learning-based steganalysis & object detection using Python.</li>
+                <li>Designed long-tailed instance segmentation models for image feature extraction.</li>
+                <li>Built 3D image simulations using Blender for advanced research visualization.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section fade-in">
+        <h2>Projects</h2>
+        <div class="card">
+            <h3>Network Intrusion Detection using LIME</h3>
+            <p>Developed ML-based IDS using Flask, Random Forest, XAI to detect anomalies with real-time monitoring.</p>
+        </div>
+        <div class="card">
+            <h3>INSTAGUARD - Fake Instagram Profile Detection</h3>
+            <p>Developed Adaboost ML model integrated into REST API for real-time fraudulent account detection.</p>
+        </div>
+        <div class="card">
+            <h3>Ransomware Inside Threat Detection using AutoML</h3>
+            <p>Processed 115,200 ransomware attack records with Google AutoML to improve early detection accuracy.</p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section fade-in">
+        <h2>Skills</h2>
+        <p>Python, C, MySQL, HTML/CSS, DataWeave, AWS, Haskell, Java, Shell, DSA, Networking, Forensics, Cryptography, OSINT, Log Analysis, Snort, Security Onion, Kali, Wireshark, Digital Forensics.</p>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="section fade-in">
+        <h2>Certifications</h2>
+        <div class="card">
+            <p>MuleSoft Developer 1</p>
+            <p>Introduction to Cybersecurity</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section fade-in">
         <h2>Contact</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <textarea id="message" name="message" placeholder="Your Message"></textarea>
-            <button type="submit">Send</button>
-        </form>
+        <p>Email: <a href="mailto:kallu@cougarnet.uh.edu">kallu@cougarnet.uh.edu</a></p>
+        <p>Phone: 940-364-9166</p>
+        <p><a href="https://www.linkedin.com/in/allukumoulica-178038275/" target="_blank">LinkedIn</a></p>
     </section>
 
     <footer>
-        <p>&copy; 2025 Your Name</p>
+        <p>© 2025 Kumoulica Allu</p>
     </footer>
 
     <script src="script.js"></script>
