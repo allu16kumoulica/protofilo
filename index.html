@@ -3,122 +3,263 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kumoulica Allu - Cybersecurity Portfolio</title>
+    <title>Kumoulica Allu - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
 </head>
 <body>
 
-    <!-- Dark Mode Toggle -->
-    <div class="dark-mode-toggle">
-        <button onclick="toggleDarkMode()">🌙</button>
-    </div>
-
-    <!-- Navigation -->
     <nav class="navbar">
-        <div class="logo">Kumoulica</div>
+        <div class="logo">Kumoulica Allu</div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
             <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+<li><a href="#certifications">Certifications</a></li>
+
+
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#certifications">Certifications</a></li>
+<li><a href="#Showcase">Showcase</a></li>
+
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section id="home" class="hero-section">
         <div class="hero-content">
-            <img src="assets/profile.jpg" alt="Profile Image" class="profile-img">
-            <h1>Hi, I'm <span class="name">Kumoulica Allu</span> 👋</h1>
-            <p>Cybersecurity Graduate Student | Machine Learning | Forensics Enthusiast</p>
-            <div class="buttons">
+            <img src="assets/profile.jpg" alt="Kumoulica" class="profile-img">
+
+            <h1>Hi, I'm Kumoulica Allu! <span>👋</span></h1>
+            <h3>Cybersecurity Engineer</h3>
+            <p>Cybersecurity Enthusiast focused on securing systems, detecting threats, and analyzing vulnerabilities.</p>
+            <div class="hero-buttons">
                 <a href="#contact" class="btn">Contact Me</a>
-                <a href="resume/Kumoulica_Allu_Resume.pdf" class="btn" download>Download CV</a>
+                <a href="resume/Kumoulica_Allu_Resume.pdf" class="btn" download>Download Resume</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/allukumoulica-178038275/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
             </div>
         </div>
     </section>
 
-    <!-- About -->
-    <section id="about" class="section fade-in">
-        <h2>About Me</h2>
-        <p>I'm currently pursuing my Master of Science in Cybersecurity at the University of Houston. 
-        I specialize in areas like Intrusion Detection, Explainable AI, OSINT, Forensics, and Cyber Threat Analysis.
-        Passionate about cybersecurity, machine learning, and solving real-world security challenges.</p>
-    </section>
+<section id="about" class="section">
+    <h2>About</h2>
+    <div class="about-container">
+        
+        <p>
+            I’m Kumoulica Allu, a Cybersecurity Engineer currently pursuing my Master of Science in Cybersecurity at The University of Houston. With a strong foundation in Cybersecurity, Networking, and Digital Forensics, I focus on securing systems, analyzing threats, and protecting critical infrastructure.</p>
 
-    <!-- Education -->
-    <section id="education" class="section fade-in">
+<p> I am passionate about vulnerability assessment, intrusion detection, and security operations, with hands-on experience using tools like Wireshark, Snort, Security Onion, SIEM, OSINT tools, Kali Linux, Burp Suite, Nmap, Metasploit, Splunk, and Digital Forensics tools. I also have experience with Python, Shell Scripting, SQL, and DataWeave to automate and analyze security data.</p>
+
+<p> Currently, I’m seeking a full-time cybersecurity role where I can contribute to defending systems, analyzing threats, and strengthening organizational security while continuing to grow my skills.</p>
+
+<p> Outside of cybersecurity, I enjoy forensic analysis, exploring new technologies, and staying up-to-date with the latest security trends. Would you like to collaborate or chat about cybersecurity? Feel free to connect with me!
+        </p>
+    </div>
+</section>
+
+    <section id="education" class="section">
         <h2>Education</h2>
-        <div class="card">
-            <h3>University of Houston</h3>
-            <p>MS Cybersecurity — GPA: 4.00 (Expected May 2026)</p>
+        <div class="content">
+            <h3>MS in Cybersecurity</h3>
+            <h4>University of Houston</h4>
+<h6> Houston,TX </h6>
+
+<p> I am currently pursuing my Master of Science in Cybersecurity at The University of Houston, where I focus on topics such as Network Security, Principles of Cybersecurity, Project Management, Secure Enterprise Systems, Critical Thinking in Cybersecurity, and Data Science in Cybersecurity. Through this program, I’ve developed strong skills in threat analysis, risk management, secure system design, and applying data science techniques to enhance cybersecurity solutions. </p>
+<h4>GPA: 4.00, Expected May 2026 </h4>
         </div>
-        <div class="card">
-            <h3>Amrita Vishwa Vidyapeetham</h3>
-            <p>B.Tech Computer Science (Cybersecurity) — GPA: 7.74 (Apr 2024)</p>
+
+
+<div class="content">
+
+            <h3>B.Tech in Computer Science & Engineering (Cyber Security)</h3>
+            <h4>Amrita Vishwa Vidyapeetham</h4>
+<p> I completed my Bachelor of Technology in Computer Science and Engineering with a specialization in Cybersecurity at Amrita Vishwa Vidyapeetham. During my studies, I gained a strong foundation in subjects like System Security, Applied Cryptography, Vulnerability Assessment , Secure Software Engineering, Cyber Forensics, Network Security, Web Application Security, and Distributed Systems. This program allowed me to develop practical skills in securing applications, analyzing vulnerabilities, performing digital investigations, and understanding advanced cybersecurity concepts.</p>
+<h4> GPA: 7.74, Apr 2024 </h4>
         </div>
+
     </section>
 
-    <!-- Experience -->
-    <section id="experience" class="section fade-in">
-        <h2>Experience</h2>
-        <div class="card">
-            <h3>Research Intern - IIT Tirupati</h3>
-            <ul>
-                <li>Applied deep learning-based steganalysis & object detection using Python.</li>
-                <li>Designed long-tailed instance segmentation models for image feature extraction.</li>
-                <li>Built 3D image simulations using Blender for advanced research visualization.</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="section fade-in">
+    <section id="projects" class="section">
         <h2>Projects</h2>
-        <div class="card">
+        <div class="project">
             <h3>Network Intrusion Detection using LIME</h3>
-            <p>Developed ML-based IDS using Flask, Random Forest, XAI to detect anomalies with real-time monitoring.</p>
+            <p>A real-time network intrusion detection system that captures and processes network traffic to detect and classify malicious activity using machine learning models. The system utilizes Random Forest and Autoencoder models for classification and anomaly detection. It features a Flask-based real-time dashboard for monitoring, integrates LIME for explainable AI, and uses Plotly for visualizing anomalies. The system detects threats like DDoS attacks and botnets, providing real-time alerts and insights to security analysts.</p>
+
+<div class="skills-container">
+            <span>Python</span>
+            <span>Scapy</span>
+            <span>Random Forest ML</span>
+            <span>Explainable AI (LIME) </span>
+            <span>Anomaly Detection</span>
+</div>
         </div>
-        <div class="card">
-            <h3>INSTAGUARD - Fake Instagram Profile Detection</h3>
-            <p>Developed Adaboost ML model integrated into REST API for real-time fraudulent account detection.</p>
+
+
+
+        <div class="project">
+            <h3>INSTAGUARD: Fake Instagram Profile Detection</h3>
+            <p>INSTAGUARD is a machine learning-powered web application designed to detect fake profiles on social media platforms like Instagram. Users can input profile details, and the system predicts account authenticity based on features such as profile pictures, post frequency, follower count, and user behavior. The application uses an Adaboost ML model with REST API integration to analyze data and provide real-time predictions, helping individuals and businesses identify fraudulent accounts and improve online security.</p>
+
+<div class="skills-container">
+            <span>Python</span>
+            <span>Flask</span>
+            <span>Adaboost ML</span>
+            <span>REST API</span>
+            <span>Social Media Analytics</span>
+</div>
         </div>
-        <div class="card">
-            <h3>Ransomware Inside Threat Detection using AutoML</h3>
-            <p>Processed 115,200 ransomware attack records with Google AutoML to improve early detection accuracy.</p>
+
+        
+    </section>
+
+    <section id="experience" class="section">
+        <h2>Experience</h2>
+        <div class="content">
+            <h3>Research Intern - Indian Institute of Technology, Tirupati</h3>
+<h4>Under the guidance of Prof. Ramakrishna</h4>
+<h5>Jun 2023-Aug 2023 </h5>
+            <p>Worked on multiple cutting-edge research projects focused on steganography and steganalysis using deep learning techniques, exploring the detection of hidden information within digital images. Additionally, I worked on image noising and denoising using the MNIST dataset to study the robustness of neural networks against noisy data.
+Collaborated on a project involving 3D image modeling and data augmentation for long-tailed instance segmentation, where I utilized Blender (3D modeling software) to generate realistic synthetic 3D images. These synthetic datasets were instrumental in enhancing model performance for rare classes in imbalanced datasets. This internship provided hands-on experience in deep learning, image processing, synthetic data generation, and advanced data augmentation strategies.</p>
+        </div>
+
+<div class="content">
+            <h3>Skill Enhancement Coordinator</h3>
+<h4>FACT Amrita Vishwa Vidyapeetham</h4>
+<h5>Oct 2023-Sep 2024 </h5>
+            <p>I organized and led multiple workshops, hands-on labs, and training sessions focused on cybersecurity and digital forensics. I collaborated with faculty and industry experts to develop skill-building modules on topics like malware analysis, vulnerability assessment, and forensic investigation. This role allowed me to mentor peers, coordinate events, and promote cybersecurity awareness while strengthening my own technical expertise and leadership skills in the field.</p>
+        </div>
+
+
+    </section>
+
+
+<section id="certifications" class="section">
+    <h2>Certifications</h2>
+
+    <div class="cert-card">
+        <div class="cert-left">
+            <h3>MuleSoft Developer 1</h3>
+            <p>Successfully completed MuleSoft Developer Level 1 Certification. Built APIs, integrated systems, and applied API-led connectivity with Anypoint Platform.</p>
+            
+<a href="https://trailhead.salesforce.com/en/credentials/verification/" target="_blank">Verify Certificate</a>
+        </div>
+        
+<div class="cert-right">
+<a href="assets/md.jpg" target="_blank"> </a>
+
+            <img src="assets/md.jpg" alt="MuleSoft Certification">
+        </div>
+    </div>
+
+
+    <div class="cert-card">
+        <div class="cert-left">
+
+            <h3>Introduction to Cybersecurity</h3>
+<p>Completed Cisco’s Introduction to Cybersecurity course, gaining knowledge in cyber threats, vulnerabilities, threat detection, network security, and privacy. Developed a strong foundation in cybersecurity best practices and global security challenges.</p>
+            
+
+            <a href="https://www.credly.com/badges/c99c5620-293b-460a-bed7-aa4c252e47bb/linked_in_profile">Verify Certificate </a>
+        </div>
+        <div class="cert-right">
+<a href="assets/cys.jpg" target="_blank"> </a>
+            <img src="assets/cys.jpg" alt="Cybersecurity Certification">
+        </div>
+    </div>
+
+</section>
+
+
+    <section id="skills" class="section">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <span>Python</span>
+            <span>C</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>MySQL</span>
+            <span>Data Weave</span>
+            <span>AWS</span>
+            <span>Haskell</span>
+            <span>Java</span>
+            <span>Shell Scripting</span>
+            <span>Networking</span>
+            <span>Forensics</span>
+            <span>Cryptography</span>
+            <span>OSINT</span>
+            <span>Web Testing</span>
+            <span>Log Analysis</span>
+            <span>Snort</span>
+            <span>Security Onion</span>
+            <span>Wireshark</span>
+            <span>Kali Linux</span>
+            <span>SIEM</span>
+            <span>Digital Forensics</span>
+            <span>Database Management</span>
         </div>
     </section>
 
-    <!-- Skills -->
-    <section id="skills" class="section fade-in">
-        <h2>Skills</h2>
-        <p>Python, C, MySQL, HTML/CSS, DataWeave, AWS, Haskell, Java, Shell, DSA, Networking, Forensics, Cryptography, OSINT, Log Analysis, Snort, Security Onion, Kali, Wireshark, Digital Forensics.</p>
-    </section>
 
-    <!-- Certifications -->
-    <section id="certifications" class="section fade-in">
-        <h2>Certifications</h2>
-        <div class="card">
-            <p>MuleSoft Developer 1</p>
-            <p>Introduction to Cybersecurity</p>
+<section id="Showcase" class="section">
+    <h2>Publications</h2>
+    <div class="publication-card">
+        <h3>A Construction of Smart Grid Authentication and Key Agreement System Using ECC Cryptography</h3>
+        <p> The smart grids consists different components. These components include corrosion resistant paint, gas pipelines, massive high voltage transformers. One of the most vital component of smart grid is smart-meter. Throughout this work, we examined the safety and security of the smart grid (SG) authentication protocols. One significant security challenge with Smart Grid is the provision of authentication and keys. Our analysis of security has demonstrated that the proposed framework satisfies the security requirements for smart grid applications, and our cost benefit analysis has been demonstrated. We have analysed the performance the protocol, and it is more secure than existing one. </p>
+        <a href="https://ieeexplore.ieee.org/document/10353338" target="_blank">View Publication</a>
+    </div>
+</section>
+
+<section id="volunteer" class="section">
+    <h2>Volunteer Work</h2>
+
+    <div class="volunteer-container">
+
+        <div class="volunteer-card">
+            <h3>Chenchu Colony Community Development Project </h3>
+            <p>Conducted an in-depth community needs assessment in Chenchu Colony by engaging with local residents, community leaders, and government officials. Identified critical challenges in areas such as access to clean water, sanitation facilities, agricultural resources, educational opportunities, and healthcare services. Compiled comprehensive reports outlining actionable solutions and recommendations to address the identified issues, supporting local development efforts and improving living standards.</p>
         </div>
-    </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section fade-in">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:kallu@cougarnet.uh.edu">kallu@cougarnet.uh.edu</a></p>
-        <p>Phone: 940-364-9166</p>
-        <p><a href="https://www.linkedin.com/in/allukumoulica-178038275/" target="_blank">LinkedIn</a></p>
-    </section>
+        <div class="volunteer-card">
+            
+            <h3>UH Engineering Career Fair</h3>
+            <p>Volunteered at the University of Houston Engineering Career Fair, assisting in event organization, registration management, and coordination of employer booths. Provided support to both recruiters and students, helping with logistics, answering queries, and ensuring smooth event flow. Collaborated with event staff to manage schedules, monitor attendance, and address on-site challenges, contributing to the overall success of the event and enhancing the networking experience for participants.</p>
+        </div>
+
+    </div>
+
+ <div class="volunteer-container">
+
+
+<div class="volunteer-card">
+            
+            <h3>Environmental Initiatives – Sustainability Drives</h3>
+            <p>Led and organized various environmental sustainability initiatives focused on promoting eco-friendly practices within the community. Conducted tree planting drives to enhance green cover, implemented awareness campaigns on waste management and water conservation, and collaborated with local organizations to promote long-term environmental stewardship. These efforts contributed to raising awareness and fostering collective responsibility towards environmental preservation.</p>
+        </div>
+
+    </div>
+
+       
+
+
+</section>
+
+<section id="contact" class="section contact-section">
+    <h2>Contact Me</h2>
+    <p>If you’d like to connect, collaborate, or discuss opportunities, feel free to reach out!</p>
+    <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:kumoulicaallu580@gmail.com">kumoulicaallu580@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/allukumoulica-178038275/" target="_blank">linkedin.com/in/allukumoulica-178038275</a></p>
+    </div>
+</section>
+
 
     <footer>
-        <p>© 2025 Kumoulica Allu</p>
+        <p>© 2025 Kumoulica Allu. All Rights Reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
